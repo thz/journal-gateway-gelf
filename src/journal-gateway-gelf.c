@@ -19,6 +19,10 @@
  * DEALINGS IN THE SOFTWARE.
 */
 
+#   if defined(__COVERITY__) && !defined(__INCLUDE_LEVEL__)
+#   define __INCLUDE_LEVEL__ 2
+#   endif
+
 #include <stdio.h>
 #include <string.h>
 #include <alloca.h>

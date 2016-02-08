@@ -129,8 +129,8 @@ char *get_entry_string(){
     return NULL;
 }
 
-int main (int argc, char *argv[]){
-    sd_journal_open(&j, NULL);
+int main (){
+    sd_journal_open(&j, 0);
     sd_journal_next(j);
     get_entry_string();
     return 0;
